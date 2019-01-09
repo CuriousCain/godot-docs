@@ -307,7 +307,7 @@ All we're doing in ``_physics_process`` is calling two functions: ``process_inpu
 ``process_input`` will be where we store all of the code relating to player input. We want to call it first before
 anything else so we have fresh player input to work with.
 
-``process_movement`` is where we'll send all of the date necessary to the :ref:`KinematicBody <class_KinematicBody>`
+``process_movement`` is where we'll send all of the data necessary to the :ref:`KinematicBody <class_KinematicBody>`
 so it can move through the game world.
 
 _________
@@ -424,7 +424,7 @@ _________
 Okay, back to ``process_input``:
 
 Next we make a new variable called ``input_movement_vector`` and assign it to an empty :ref:`Vector2 <class_Vector2>`.
-We will use this to make a virtual axis of sorts so map the player's input to movement.
+We will use this to make a virtual axis of sorts to map the player's input to movement.
 
 .. note:: This may seem overkill for just the keyboard, but this will make sense later when we add joypad input.
 
